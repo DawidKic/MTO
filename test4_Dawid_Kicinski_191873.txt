@@ -1,5 +1,5 @@
 testowy1: A
 testowy2: Tt
 testowy3: t
-testowy4: Nt
+testowy4: A
 testowy5: N
