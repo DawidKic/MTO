@@ -1,1 +1,1 @@
-input0 : A
+testowy1: A
