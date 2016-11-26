@@ -1,0 +1,7 @@
+testowy1: N
+testowy2: NTt
+testowy3: N
+testowy4: NTt
+testowy5: A
+testowy6: A
+testowy7: Nt
