@@ -39,14 +39,14 @@ public class AddTest {
 	public void overflowTestMax()
 	{
 		System.out.println("@Test add maximum overflow");
-		calculator.add(2147483646, 2147483646);
+		calculator.add(Integer.MAX_VALUE, Integer.MAX_VALUE);
 	}
 	
 	@Test(expected=ArithmeticException.class)
 	public void overflowTestMin()
 	{
 		System.out.println("@Test add minimum overflow");
-		calculator.add(-2147483646, -2147483646);
+		calculator.add(Integer.MIN_VALUE, Integer.MIN_VALUE);
 	}
 	
 

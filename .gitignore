@@ -79,4 +79,5 @@ local.properties
 .recommenders/
 
 RemoteSystemsTempFiles/
-test/
+przyklady/
+Testowanie.java
