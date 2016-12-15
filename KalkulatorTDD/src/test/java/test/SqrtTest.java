@@ -42,7 +42,7 @@ public class SqrtTest {
 		System.out.println("@Test sqrt of zero");
 		assertEquals(testSqrt, calculator.sqrt(3));
 	}
-	
+
 	@Test
 	public void SqrtTestOne() {
 		int testSqrt = 1;
