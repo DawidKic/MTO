@@ -8,33 +8,46 @@ import org.junit.Test;
 import calculator.Calculator;
 
 public class SqrtTest {
-	
+
 	Calculator calculator;
-	
+
 	@Before
-	public void Create()
-	{
+	public void Create() {
 		calculator = new Calculator();
 	}
-	
+
 	@Test
-	public void SqrtTestPositiveIntegerResult(){
+	public void SqrtTestPositiveIntegerResult() {
 		int testSqrt = 3;
 		System.out.println("@Test sqrt positive");
 		assertEquals(testSqrt, calculator.sqrt(9));
 	}
-	
+
 	@Test(expected = ArithmeticException.class)
-	public void SqrtTestNegative(){
+	public void SqrtTestNegative() {
 		System.out.println("@Test sqrt negative");
 		calculator.sqrt(-9);
 	}
-	
+
 	@Test
-	public void SqrtTestZero(){
+	public void SqrtTestZero() {
 		int testSqrt = 0;
 		System.out.println("@Test sqrt of zero");
 		assertEquals(testSqrt, calculator.sqrt(0));
+	}
+
+	@Test
+	public void SqrtTestFloatResult() {
+		int testSqrt = 1;
+		System.out.println("@Test sqrt of zero");
+		assertEquals(testSqrt, calculator.sqrt(3));
+	}
+	
+	@Test
+	public void SqrtTestOne() {
+		int testSqrt = 1;
+		System.out.println("@Test sqrt of zero");
+		assertEquals(testSqrt, calculator.sqrt(1));
 	}
 
 }
