@@ -23,5 +23,18 @@ public class SqrtTest {
 		System.out.println("@Test sqrt positive");
 		assertEquals(testSqrt, calculator.sqrt(9));
 	}
+	
+	@Test(expected = ArithmeticException.class)
+	public void SqrtTestNegative(){
+		System.out.println("@Test sqrt negative");
+		calculator.sqrt(-9);
+	}
+	
+	@Test
+	public void SqrtTestZero(){
+		int testSqrt = 0;
+		System.out.println("@Test sqrt of zero");
+		assertEquals(testSqrt, calculator.sqrt(0));
+	}
 
 }

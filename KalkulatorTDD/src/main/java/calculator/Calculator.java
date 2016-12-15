@@ -1,17 +1,25 @@
 package calculator;
 
 public class Calculator {
-	//dodawanie
+	// dodawanie
 	public int add(int a, int b) {
 		return Math.addExact(a, b);
 	}
-	//dzielenie
-	public int div(int a, int b){
-		if (a == Integer.MIN_VALUE && b == -1)
-		{
+
+	// dzielenie
+	public int div(int a, int b) {
+		if (a == Integer.MIN_VALUE && b == -1) {
 			throw new ArithmeticException();
 		}
 		return Math.floorDiv(a, b);
+	}
+
+	// pierwiastek
+	public int sqrt(int a) {
+		if (a < 0) {
+			throw new ArithmeticException();
+		}
+		return (int) Math.sqrt(a);
 	}
 
 }

@@ -8,17 +8,17 @@ import calculator.Calculator;
 
 public class AddTest {
 	Calculator calculator;
+
 	@Before
-	public void Create()
-	{
+	public void Create() {
 		calculator = new Calculator();
 	}
-	
+
 	@Test
-	public void addTestPositive(){
+	public void addTestPositive() {
 		int testSum = 4;
 		System.out.println("@Test add positive");
-		assertEquals(testSum, calculator.add(1,3));
+		assertEquals(testSum, calculator.add(1, 3));
 	}
 	
 	@Test
