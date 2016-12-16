@@ -24,7 +24,7 @@ public class Calculator {
 
 	// random
 	public int rand(int a, int b) {
-		return (int) (Math.random() * (a - b) + b);
+		return (int) (Math.random() * (long)(b - a) + a);
 	}
 
 }

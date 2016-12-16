@@ -51,5 +51,16 @@ public class RandTest {
 			assertTrue((testRandMax > testSample) && (testRandMin < testSample));
 		}
 	}
+	
+	@Test
+	public void RandTestRangeCheckMax() {
+		int testRandMax = Integer.MAX_VALUE;
+		int testRandMin = Integer.MIN_VALUE;
+		int testSample = calculator.rand(Integer.MIN_VALUE, Integer.MAX_VALUE);
+		System.out.println("@Test rand range check");
+		for (int i = 0; i < 100; i++) {
+			assertTrue((testRandMax > testSample) && (testRandMin <= testSample));
+		}
+	}
 
 }
