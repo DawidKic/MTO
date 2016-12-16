@@ -18,11 +18,13 @@ public class RandTest {
 
 	@Test
 	public void RandTestRangeCheck() {
-		int testRandMax = 2;
+		int testRandMax = 4;
 		int testRandMin = 0;
-		int testSample = calculator.rand(1, 2);
+		int testSample = calculator.rand(1, 4);
 		System.out.println("@Test rand range check");
-		assertTrue((testRandMax > testSample) && (testRandMin < testSample));
+		for (int i = 0; i < 100; i++) {
+			assertTrue((testRandMax > testSample) && (testRandMin < testSample));
+		}
 	}
 
 	@Test
@@ -41,11 +43,13 @@ public class RandTest {
 
 	@Test
 	public void RandTestRangeCheckNegativeToPositive() {
-		int testRandMax = 101;
-		int testRandMin = 0;
-		int testSample = calculator.rand(-100, 100);
+		int testRandMax = 2;
+		int testRandMin = -2;
+		int testSample = calculator.rand(-2, 2);
 		System.out.println("@Test rand range check");
-		assertTrue((testRandMax > testSample) && (testRandMin < testSample));
+		for (int i = 0; i < 100; i++) {
+			assertTrue((testRandMax > testSample) && (testRandMin < testSample));
+		}
 	}
 
 }
